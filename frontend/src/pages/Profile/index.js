@@ -46,7 +46,7 @@ export default function Profile() {
         }
     }, [userToken] );
 
-    async function handleDeleteIncident(id) {
+    async function handleDeleteEvent(id) {
         try {
             await api.delete(`secrets/${ id }`, {
                 headers: {
@@ -97,7 +97,7 @@ export default function Profile() {
                         <button 
                         onClick={ () => {
                                 if (window.confirm('Are you sure you wish to delete this item?')){
-                                    handleDeleteIncident(secrets.id)
+                                    handleDeleteEvent(secrets.id)
                                 }
                             } 
                         } 

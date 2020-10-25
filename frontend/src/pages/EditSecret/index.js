@@ -23,7 +23,7 @@ export default function NewSecret() {
         history.push('/');
     }
 
-    async function handleNewIncident(event) {
+    async function handleNewEvent(event) {
         event.preventDefault();
 
         const data = { name, username, password, notes };
@@ -56,7 +56,7 @@ export default function NewSecret() {
 
                 </section>
 
-                <form onSubmit={ handleNewIncident }>
+                <form onSubmit={ handleNewEvent }>
                     <input 
                         placeholder="Titulo"
                         value={ name }
