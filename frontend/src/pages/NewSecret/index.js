@@ -23,8 +23,7 @@ export default function NewSecret() {
         history.push('/');
     }
 
-    async function handleNewEven
-    t(event) {
+    async function handleNewEvent(event) {
         event.preventDefault();
 
         const data = { name, username, password, notes };
